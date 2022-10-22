@@ -16,7 +16,7 @@ const HomePage = () => {
               height='30'
               className='d-inline-block align-top'
             />{' '}
-            Rick And Morty Grapql
+            Rick & Morty
           </Navbar.Brand>
         </Container>
       </Navbar>
