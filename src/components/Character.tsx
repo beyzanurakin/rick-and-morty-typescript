@@ -28,12 +28,12 @@ export const Character = ({ character }: Props) => {
             {character.id}
           </Card.Title>
           <Card.Text>
-            <b> Location: </b>
-            {character.location.name}
-          </Card.Text>
-          <Card.Text>
             <b> Name: </b>
             {character.name}
+          </Card.Text>
+          <Card.Text>
+            <b> Location: </b>
+            {character.location.name}
           </Card.Text>
         </Card.Body>
       </Card>
