@@ -1,4 +1,4 @@
-import { Modal, Form } from 'react-bootstrap'
+import { Modal, Form, Button } from 'react-bootstrap'
 import { useGlobalContext } from '../context/context'
 import { useState } from 'react'
 
@@ -15,6 +15,17 @@ const Filters = () => {
     <Modal show={showModal.show} onHide={handleClose}>
       <Modal.Header closeButton>
         <Modal.Title>Filter</Modal.Title>
+        <Button
+          onClick={() =>
+            setShowModal((prev) => ({
+              ...prev,
+              filter: '',
+            }))
+          }
+          variant='light'
+        >
+          Clean Filters
+        </Button>{' '}
       </Modal.Header>
       <Modal.Body>
         <Form
