@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useQuery, NetworkStatus } from '@apollo/client'
+import { useState } from 'react'
+import { useQuery } from '@apollo/client'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
 import { GET_CHARACTERS_QUERY } from '../graphql/queries'
@@ -9,6 +9,7 @@ import { useGlobalContext } from '../context/context'
 
 const Characters = () => {
   const { showModal } = useGlobalContext()
+  // eslint-disable-next-line
   const [page, setPage] = useState<number>(1)
   const { data, loading, error, fetchMore } = useQuery(GET_CHARACTERS_QUERY, {
     variables: { page: page, name: showModal.filter },

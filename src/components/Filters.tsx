@@ -1,6 +1,5 @@
 import { Modal, Form, Button } from 'react-bootstrap'
 import { useGlobalContext } from '../context/context'
-import { useState } from 'react'
 
 const Filters = () => {
   const { showModal, setShowModal } = useGlobalContext()
